@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orders - Club House Wear</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Club House Wear</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="order.html">New Order</a>
+    </nav>
+  </header>
+
+  <main class="order-page">
+    <section class="order-card">
+      <h1>Submitted Orders</h1>
+      <p id="ordersStatus">Showing your own local order history. Master records are in our private Google Sheet.</p>
+
+      <div class="form-actions">
+        <a href="order.html" class="order-link secondary-link">Add New Order</a>
+        <button type="button" class="ghost-btn" onclick="clearOrders()">Clear All Orders</button>
+      </div>
+
+      <div class="orders-table-wrap">
+        <table class="orders-table">
+          <thead>
+            <tr>
+              <th>Submitted</th>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h3>Contact Club House Wear</h3>
+    <p>Phone: <a href="tel:x">x</a></p>
+    <p>WhatsApp: <a href="https://wa.me/x" target="_blank" rel="noopener">x</a></p>
+    <p>&copy; 2026 Club House Wear. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

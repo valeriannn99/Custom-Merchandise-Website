@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place Order - Club House Wear</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Club House Wear</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="orders.html">View Orders</a>
+    </nav>
+  </header>
+
+  <main class="order-page">
+    <section class="order-card">
+      <h1>Inquire / Place an Order</h1>
+      <p>Fill this form to submit your order request.</p>
+
+      <form id="orderForm">
+        <div class="order-form-grid">
+          <div class="order-form-field">
+            <label for="product">Product</label>
+            <input id="product" type="text" required />
+          </div>
+
+          <div class="order-form-field">
+            <label for="quantity">Quantity Estimate</label>
+            <input id="quantity" type="number" min="1" placeholder="e.g. 50" required />
+          </div>
+
+          <div class="order-form-field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+          </div>
+
+          <div class="order-form-field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="your@email.com" required />
+          </div>
+
+          <div class="order-form-field">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="x" required />
+          </div>
+
+          <div class="order-form-field full">
+            <label for="message">Message / Specific Requirements</label>
+            <textarea id="message" placeholder="Tell us about colors, logos, sizes, and notes"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="primary-btn">Send Inquiry</button>
+          <a href="orders.html" class="order-link secondary-link">View Orders</a>
+        </div>
+
+        <p id="orderStatus" class="order-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h3>Contact Club House Wear</h3>
+    <p>Phone: <a href="tel:x">x</a></p>
+    <p>WhatsApp: <a href="https://wa.me/x" target="_blank" rel="noopener">x</a></p>
+    <p>&copy; 2026 Club House Wear. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
